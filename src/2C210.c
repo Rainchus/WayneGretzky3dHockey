@@ -1,5 +1,13 @@
 #include "common.h"
 
+typedef struct temp0 {
+    char unk_00[0x1F4];
+    s32 unk_1F4;
+} temp0; //unknown size
+
+void func_8002D674(temp0*, s32);
+void func_8002DA4C(void);
+
 #pragma GLOBAL_ASM("asm/nonmatchings/2C210/func_8002CE10.s")
 
 #pragma GLOBAL_ASM("asm/nonmatchings/2C210/func_8002D084.s")
@@ -14,7 +22,10 @@
 
 #pragma GLOBAL_ASM("asm/nonmatchings/2C210/func_8002DA4C.s")
 
-#pragma GLOBAL_ASM("asm/nonmatchings/2C210/func_8002DC80.s")
+void func_8002DC80(temp0* arg0) {
+    func_8002DA4C();
+    func_8002D674(arg0, arg0->unk_1F4);
+}
 
 #pragma GLOBAL_ASM("asm/nonmatchings/2C210/func_8002DCB4.s")
 

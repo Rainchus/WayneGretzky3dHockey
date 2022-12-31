@@ -97,7 +97,7 @@ IMG_CONVERT = $(PYTHON) $(TOOLS_DIR)/image_converter.py
 # Flags
 
 OPT_FLAGS      := -O2
-MIPS_VERSION   := -mips2
+MIPS_VERSION   := -mips1
 
 INCLUDE_CFLAGS := -I. -Iinclude -Iinclude/PR -Iassets -Isrc
 DEFINES := -D_LANGUAGE_C -DF3DEX_GBI -DNDEBUG
