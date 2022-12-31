@@ -1,0 +1,22 @@
+# Cache files
+__pycache__/
+.pyc
+.DS_Store
+
+# Project-specific ignores
+*.bin
+*.ld
+*.o
+*.z64
+asm/
+assets/
+build/
+expected/
+.vscode/configurationCache.log
+.vscode/dryrun.log
+.vscode/targets.log
+
+# Tool artifacts
+undefined_funcs_auto.txt
+undefined_syms_auto.txt
+ctx.c
